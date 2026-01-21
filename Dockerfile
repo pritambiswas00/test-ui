@@ -1,6 +1,6 @@
 # ---- Base ----
 FROM node:20-alpine AS base
-WORKDIR /app
+WORKDIR /app 
 
 # ---- Dependencies ----
 FROM base AS deps
