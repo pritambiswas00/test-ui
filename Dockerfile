@@ -13,7 +13,7 @@ RUN \
 
 # ---- Build ----
 FROM base AS build
-COPY --from=deps /app/node_modules ./node_modules  
+COPY --from=deps /app/node_modules ./node_modules 
 COPY . .
 RUN npm run build
 
